@@ -9,7 +9,7 @@ export default class datatable extends Component {
     componentDidMount(){
 
     }
-    
+
     componentWillUnmount(){
 
     }
@@ -17,7 +17,7 @@ export default class datatable extends Component {
     render() {
         return (
             <div>
-                
+                <table className="display" width="100%" ref={el => this.el = el}></table>
             </div>
         )
     }
