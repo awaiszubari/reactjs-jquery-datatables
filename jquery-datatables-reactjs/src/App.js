@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Datatable from './components/datatable';
 
@@ -7,17 +6,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            React Js App with Jquery Datatables.net
-        </p>
-        </header>
-        <Datatable data={dataSet}/>
+        <h2>React Js App with Jquery Datatables.net</h2>
+        <Datatable data={dataSet} columns={columns}/>
       </div>
     );
   }
 }
+const columns = [
+  { title: "Name" },
+  { title: "Position" },
+  { title: "Office" },
+  { title: "Extn." },
+  { title: "Start date" },
+  { title: "Salary" }
+]
+
 const dataSet = [
   ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800"],
   ["Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750"],
