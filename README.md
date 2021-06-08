@@ -6,3 +6,6 @@ Integrating jQuery Datatables to React Js.
 
 ## Creating New Project
 `create-react-app jquery-datatables-reactjs`
+
+## Adding jQuery datatables to project
+`npm install --save jquery datatables.net`
